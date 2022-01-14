@@ -73,7 +73,7 @@ class SolutionHashMap{
 
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer>numberMap = new HashMap<>();
-        for (int i=0;i<nums.length;i++){ // as the last item can't be checked with (last item+1), so we will go till size-1;
+        for (int i=0;i<nums.length;i++){
             int requiredNumber = target-nums[i];
             if(numberMap.containsKey(requiredNumber)){
                 return  new int[]{numberMap.get(requiredNumber),i};
