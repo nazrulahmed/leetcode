@@ -6,8 +6,8 @@ public class TwoSum {
     /*
                                  Solution Approach:
        Here I am tried to solve this problem with two approach.
-       Approach 1: Bruteforce
-       Approach 2: Using HashMap
+       Approach 1: Bruteforce {O(n^2)}
+       Approach 2: Using HashMap {O(n)}
 
      */
 
@@ -17,7 +17,7 @@ public class TwoSum {
         SolutionHashMap solutionHashMap = new SolutionHashMap();
         int n; //number of items
         int[] nums = new int[10005]; //numbers
-        int resultArray []= new int[10005];
+        int[] resultArray = new int[10005];
         int target;
         System.out.println("Enter Number of items");
         n = scanner.nextInt();
